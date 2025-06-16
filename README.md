@@ -4,8 +4,40 @@ The template allows you to test the TeachBook Editor:
 
 ![image](https://github.com/user-attachments/assets/506238db-2ec7-4241-86d7-3ab20f14e799)
 
+You can test this in your own book linked to a GitHub repository or use this template repository
 
-## How to get started
+## How to test with your own book linked to a GitHub repository.
+
+1. Add the following lines to your requirements.txt:
+
+```
+--extra-index-url https://test.pypi.org/simple/
+teachbooks_software_project_extension_name==0.1.3
+```
+
+2. Change the baseurl and repository_url properties in `book/_config.yml` under `html` and `html_theme_options` to `https://<your_username>.github.io/<your_repository_name>/` and `https://github.com/<your_username>/<your_repository_name>` respectively. The end result should look like this:
+
+```yaml
+html:
+      favicon : "figures/TB_favicon.ico"                 # Replace this with your own favicon
+      baseurl : "https://<your_username>.github.io/<your_repository_name>/"
+...
+html_theme_options:
+      logo:
+...
+      repository_url: "https://github.com/_<your_username>_/_<your_repository_name>_"
+```
+
+3. Add the extension `teachbooks_software_project_extension_name` to `book/_config.yml` under `sphinx - extra extensions`. The end result should look like this:
+
+```yaml
+sphinx:                                              # Options passed on to the underlying sphinx-parser
+  extra_extensions:                                  # Gives you a starter package of extensions to use in your book
+    ...
+    - teachbooks_software_project_extension_name
+```
+
+## How to get started with this template repository
 
 How to use the template is demonstrated in the figure below, all steps are elaborated on in the following step-by-step tutorial.
 
@@ -21,7 +53,7 @@ How to use the template is demonstrated in the figure below, all steps are elabo
 
 ![Activate GitHub Pages](https://github.com/TeachBooks/template_figures/blob/main/set_up_pages.png?raw=true)
 
-4. Change the baseurl and repository_url properties in `_config.yml` under `html` and `html_theme_options` to `https://<your_username>.github.io/<your_repository_name>/` and `https://github.com/<your_username>/<your_repository_name>` respectively. The end result should look like this:
+4. Change the baseurl and repository_url properties in `book/_config.yml` under `html` and `html_theme_options` to `https://<your_username>.github.io/<your_repository_name>/` and `https://github.com/<your_username>/<your_repository_name>` respectively. The end result should look like this:
 
 ```yaml
 html:
