@@ -21,7 +21,7 @@ How to use the template is demonstrated in the figure below, all steps are elabo
 
 ![Activate GitHub Pages](https://github.com/TeachBooks/template_figures/blob/main/set_up_pages.png?raw=true)
 
-4. Change the baseurl and repository_url properties in `_config.yml` under html and html_theme_options to `https://<your_username>.github.io/<your_repository_name>/` and `https://github.com/<your_username>/<your_repository_name>` respectively. The end result should look like this:
+4. Change the baseurl and repository_url properties in `_config.yml` under `html` and `html_theme_options` to `https://<your_username>.github.io/<your_repository_name>/` and `https://github.com/<your_username>/<your_repository_name>` respectively. The end result should look like this:
 
 ```yaml
 html:
@@ -38,6 +38,6 @@ html_theme_options:
 
 6. When the workflow has finished, visit your built TeachBook at `https://<username or organiszation_name>.github.io/<repository_name>` (case sensitive). For our example it is [https://dummydocent.github.io/test_book_from_template/](https://dummydocent.github.io/test_book_from_template/) for the shown repository. These links are visible in the action's summary as well, as shown in the figure of step 4.
 
-7. Generate a personal access token, go to https://github.com/settings/personal-access-tokens/new. Give it a recognizable name. Under repository access, either set all repositories, or select the repository you just made for your TeachBook. Under Permissions > Repository permissions, set the 'contents' option to read and write. Then, click on generate token. You can copy and paste this token into the application, but you can only do this once. When you close that page, the token will be gone. Treat the token like you would any password.
+7. For creating the PAT, the user has to click the "Don't have an access token?" hypertext, which will redirect them to the GitHub page for creating a token. After that the user will have to write down the name of the token in the input box for Token name, change repository access to all repositories and go under permissions/repository permissions and change contents to read and write. When clicking Generate token, the user will be redirected to a page which displays the token. They have to copy and store that if they don't want to redo the token creation process again. After that is done, the user can input the token into the input box under "Enter GitHub Access Token", which would allow them access to the rest of the GitHub functionality.
 
 8. To test the TeachBooks editor, click the 'edit page' button on the top of a page in your built book

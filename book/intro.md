@@ -1,10 +1,28 @@
 +++
-# Welcome to the Template Book
+# Heading 1
 
-*This is the first page the student will see when opening the url.*
+`Inline code`
 
-This book can be used as a template for other books. It includes a starter package of the software developed by the TeachBooks initiative and some exercises to get you going!
++++
+## Heading 2
+
+This should work? Maybe Not sure
+
+paragraph
+
+## Heading 2
+
+This should work I think
+
+### Heading 3
+
+This should also work
 
 
 
-I edited this page yippie
+```{image} https://cdn-icons-png.flaticon.com/512/4032/4032712.png
+:class: 
+:align: left
+:title: 
+:alt: 
+```
