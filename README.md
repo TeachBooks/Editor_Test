@@ -4,9 +4,9 @@ The template allows you to test the TeachBook Editor:
 
 ![image](https://github.com/user-attachments/assets/506238db-2ec7-4241-86d7-3ab20f14e799)
 
-You can test this in your own book linked to a GitHub repository or use this template repository
+You can test this in your own book linked to a GitHub repository or use this template repository.
 
-## How to test with your own book linked to a GitHub repository.
+## Option 1: Test with your own book linked to a GitHub repository
 
 1. Add the following lines to your requirements.txt:
 
@@ -37,7 +37,15 @@ sphinx:                                              # Options passed on to the 
     - teachbooks_software_project_extension_name
 ```
 
-## How to get started with this template repository
+4.  Now checkout the progress of the publishing workflow under `Actions` - `All workflows` -  `call-deploy-book` -`<the most recent workflow run>`. Remember, the first commit which is there has failed because GitHub Pages wasn't activated at the time of `Initial commit`.
+
+5. When the workflow has finished, visit your built TeachBook at `https://<username or organiszation_name>.github.io/<repository_name>` (case sensitive). For our example it is [https://dummydocent.github.io/test_book_from_template/](https://dummydocent.github.io/test_book_from_template/) for the shown repository. These links are visible in the action's summary as well, as shown in the figure of step 4.
+
+5. For creating the PAT, the user has to click the "Don't have an access token?" hypertext, which will redirect them to the GitHub page for creating a token. After that the user will have to write down the name of the token in the input box for Token name, change repository access to all repositories and go under permissions/repository permissions and change contents to read and write. When clicking Generate token, the user will be redirected to a page which displays the token. They have to copy and store that if they don't want to redo the token creation process again. After that is done, the user can input the token into the input box under "Enter GitHub Access Token", which would allow them access to the rest of the GitHub functionality.
+
+7. To test the TeachBooks editor, click the 'edit page' button on the top of a page in your built book
+
+## Option 2: Test with this template book repository
 
 How to use the template is demonstrated in the figure below, all steps are elaborated on in the following step-by-step tutorial.
 
