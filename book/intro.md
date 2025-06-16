@@ -1,6 +1,6 @@
 +++
 # Heading 1
 
-Click {fa}`pen-to-square` - {fa}`pen` `Edit page` to start editing your book in the WYSIWYG editor
+Click the button of the 'pen in the square' - 'pen' `Edit page` to start editing your book in the WYSIWYG editor
 
 +++
